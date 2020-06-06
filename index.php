@@ -65,7 +65,8 @@
             $($('.nav-tabs li')[3]).find('a').click();
         } else {
             $('.nav-tabs li.active').next('li').find('a').click();
-            reloadAll();
+            // The dashboards I use reload themselves so I don't need this
+            // reloadAll();
         }
         document.title = 'Full Page Dashboard - ' + $('.nav-tabs li.active a').text();
     }
